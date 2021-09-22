@@ -1,0 +1,35 @@
+/* Nav responsive design
+ * Defualt
+ * Desktop view  */ 
+.nav_container {
+  height: 10vh;
+  width: 100%;
+  padding-top: 2vh;
+  box-sizing: border-box;
+  background: #222; 
+  margin: 0; 
+}
+
+/* Note: line-height lowers nav items */
+.nav_items {
+  margin: 0; 
+  display: flex; 
+  line-height: 8vh; 
+  flex-flow: row nowrap; 
+  align-items: center;
+  justify-content: space-around; 
+
+}
+.nav_items li {
+  list-style-type: none;  /* Eliminate bullet points */
+}
+
+.nav_items li a {
+  color: white;
+  flex: 1;
+}
+
+/* Breakpoints for  
+ * tablet and phone view */ 
+
+

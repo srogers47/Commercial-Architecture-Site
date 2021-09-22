@@ -1,0 +1,24 @@
+{% load static %} 
+<!DOCTYPE html>
+<html>
+	<head>
+	  <meta charset="utf-8">
+	  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+	  <link rel="stylesheet" href="{% static styles.css %}">
+	  <link rel="stylesheet" type="text/css" href="{% static 'css/nav.css' %}">
+	  <link rel="stylesheet" type="text/css" href="{% static 'css/brand.css' %}">
+	  <link rel="stylesheet" type="text/css" href="{% static 'css/hero_landing.css' %}">
+	  <title>Commercial Architecture</title> 
+	</head>
+	<body class="root_container">
+	  {# Landing page html partials. #}
+	  {% block content  %}
+	    {% include 'landing_page/Nav.html' %}
+		{% include 'landing_page/Firm.html' %}
+	  {% endblock  %}
+	</body>
+</html>
+
+
+
+
