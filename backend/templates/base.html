@@ -7,15 +7,17 @@
 	  <link rel="stylesheet" href="{% static styles.css %}">
 	  <link rel="stylesheet" type="text/css" href="{% static 'css/nav.css' %}">
 	  <link rel="stylesheet" type="text/css" href="{% static 'css/brand.css' %}">
-	  <link rel="stylesheet" type="text/css" href="{% static 'css/hero_landing.css' %}">
+	  <link rel="stylesheet" type="text/css" href="{% static 'css/landing_hero.css' %}">
 	  <title>Commercial Architecture</title> 
 	</head>
+
 	<body class="root_container">
 	  {# Landing page html partials. #}
 	  {% block content  %}
-	    {% include 'landing_page/Nav.html' %}
+		{% include 'landing_page/Nav.html' %}
+	  	{% include 'landing_page/Landing_Hero.html'  %}
 		{% include 'landing_page/Firm.html' %}
-	  {% endblock  %}
+	  {% endblock content %}
 	</body>
 </html>
 

@@ -1,0 +1,11 @@
+/* Brand log should have sticky positioning
+ * And somwhat transparent... Perhaps I can match the color of the background images with jquery? 
+ */
+
+.brand {
+  background: transparent; 
+  color: goldenrod; 
+  height: 10vh;
+  position: fixed; 
+  
+}

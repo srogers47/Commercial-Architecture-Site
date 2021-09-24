@@ -5,15 +5,16 @@
  */
  
 .landing_hero_image {
-  background-image: url("{% static '/images/landing_hero_first.jpeg' %}") no-repeat fixed; 
-  height: 100%;
-  width: 100%; 
-  display: flex;
+     background-image: url("{% 'static /images/landing_hero_first.jpeg'  %}");
+	 background-repeat: no-repeat;
+	 background-position: center;
+	 background-size: cover;
+	 position: relative;
+     height: 100%;
 }
 .landing_hero_text {
 	text-color: white; 
-	line-height: 50% 
-	flex: wrap; 
+	line-height: 50%;
 }
 
 /* TODO  Add more words, content*/ 
@@ -34,8 +35,5 @@
   }
   100% {
     content: "Nursery";
-  }
-  100% {
-    content: "Interior";
   }
 }
