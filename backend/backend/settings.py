@@ -29,7 +29,7 @@ SECRET_KEY = 'django-insecure-vlu#k^=%x=@avmzjd=0mq$7&p-eag*boqmaj8k_$_x8-xl!)ve
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['*'] # NOTE: Only recommended for local dev.
+ALLOWED_HOSTS = ['*'] # NOTE: Only suitable for LOCAL dev on a SECURE network.
 
 
 # Application definition
@@ -44,6 +44,8 @@ INSTALLED_APPS = [
     'collection_placement',
     'image_collection',
     'home',
+    'tailwind',
+    'theme', # Tailwind app 
 ]
 
 MIDDLEWARE = [
@@ -64,7 +66,7 @@ TEMPLATES = [
     {
         'BACKEND': 'django.template.backends.django.DjangoTemplates',
         'DIRS': [
-            os.path.join(BASE_DIR, 'templates'), 
+            os.path.join(BASE_DIR, 'theme/templates'), 
             ],
         'APP_DIRS': True, 
         'OPTIONS': {
@@ -142,3 +144,9 @@ MEDIA_ROOT = os.path.join(BASE_DIR, 'static/images')
 # https://docs.djangoproject.com/en/3.2/ref/settings/#default-auto-field
 
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
+
+
+
+# Tailwindcss 
+TAILWIND_APP_NAME = 'theme'
+INTERNAL_IPS = ["127.0.0.1",] 
