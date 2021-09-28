@@ -14,6 +14,7 @@ module.exports = {
      */
     mode: "jit",
 
+
     purge: [
         /**
          * HTML. Paths to Django template files that will contain Tailwind CSS classes.
@@ -40,8 +41,7 @@ module.exports = {
          */
         /* JS 1: Ignore any JavaScript in node_modules folder. */
         // '!../../**/node_modules',
-        /* JS 2: Process all JavaScript files in the project. */
-        // '../../**/*.js',
+        /* JS 2: Process all JavaScript files in the project. 
 
         /**
          * Python: If you use Tailwind CSS classes in Python, uncomment the following line
