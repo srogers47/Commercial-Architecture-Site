@@ -1,16 +1,27 @@
 <!-- Use id to control smooth scroll -->
 {% load static  %}
-<section class=" h-full "id="landing">
-    <!-- TODO Make the <h1> cycle through words with jquery -->
-    <h1>Build your dream Home</h1>
-    <!--Smooth Scroll up and down buttons--> 
-    <button  class="absolute bottom-0 right-0 h-10 w-10">
-	  <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+<!-- TODO make image responsive for smaller screens --> 
+<section class=" z-0 h-screen w-screen items-center flex-1  flex " id="landing" 
+	style="background-image: url({% static 'images/landing-hero-first.jpeg' %});
+    background-repeat: no-repeat;
+	background-attachment: fixed;
+	background-size: cover;
+  	">
+  <!-- TODO Make the <h1> cycle through words with jquery -->
+  <div class="flex flex-1 flex-wrap justify-center items-center">
+    <h1 class=" z-1 text-white font-extrabold text-5xl ">Build your dream Home</h1>
+  </div>
+  
+  <!-- Smooth Scroll down arrow  TODO Fixed position causes bug, arrows are only rendering on landing hero for all partials --> 
+  <div class="pr-4 flex flex-1 flex-col self-end items-end">
+	<a href="#firm">
+    <button  class="justify-end hover:bg-blue-300 transition duration-300">
+	  <svg xmlns="http://www.w3.org/2000/svg" class="h-14 w-14" fill="none" viewBox="0 0 24 24" stroke="white">
         <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 13l-7 7-7-7m14-8l-7 7-7-7" />
 	  </svg>
+	</a>
     </button>
+  </div> 
 </section> 
 
-
-  
   

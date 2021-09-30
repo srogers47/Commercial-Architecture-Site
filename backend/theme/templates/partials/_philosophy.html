@@ -1,0 +1,23 @@
+{% load static  %}
+<!-- Philosophy --> 
+<!-- TODO make image responsive for smaller screens --> 
+<section class=" z-0 h-screen w-screen flex flex-1 items-center" id="philosophy" 
+	style="background-image: url({% static 'images/philosophy.jpeg' %});
+    background-repeat: no-repeat;
+	background-attachment: fixed;
+	background-size: cover;
+  	">
+  <h1 class=" z-1 flex text-white font-extrabold flex-1 text-5xl pl-60 ">Philosophy Section.</h1>
+  
+  <!-- Smooth Scroll Down  --> 
+  <div class="pr-4 flex flex-1 flex-col self-end items-end">
+      <button class="justify-end hover:bg-blue-300 transition duration-300" alt="smooth scroll button">
+		<a href="#projects">
+        <svg xmlns="http://www.w3.org/2000/svg" class="h-14 w-14" fill="none" viewBox="0 0 24 24" stroke="white">
+        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 13l-7 7-7-7m14-8l-7 7-7-7"/>
+        </svg>
+	  </a>
+    </button> 
+  </div>
+</section>
+

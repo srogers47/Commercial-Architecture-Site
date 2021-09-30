@@ -1,7 +1,7 @@
 {% load static tailwind_tags %}
 {% load static  %}
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" style="scroll-behavior: smooth;">
 	<head>
         <title>Professional Archetecture & Design</title>
 		<meta charset="UTF-8">
@@ -11,11 +11,13 @@
 		{% tailwind_css %}
 	</head>
 
-	<body>
+	<body class="container overflow-y-scroll overflow-x-hidden  w-screen h-full">
 	  <!-- Nav bar --> 
 	  {% include 'partials/_nav.html' %}
 	  <!-- Main Content --> 
-
+	  {% include 'partials/_landing.html' %}
+	  {% include 'partials/_firm.html' %}
+	  {% include 'partials/_philosophy.html' %}
 
 	</body>
 </html>

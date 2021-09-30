@@ -1,6 +1,26 @@
+<!-- Use id to control smooth scroll -->
+{% load static  %}
+<!-- Firm --> 
+<!-- TODO make image responsive for smaller screens --> 
+<section class="z-0 h-screen w-screen flex flex-1 items-center" id="firm" 
+	style="background-image: url({% static 'images/firm.jpeg' %});
+    background-repeat: no-repeat;
+	background-attachment: fixed;
+	background-size: cover;
+  	">
+  <div class=" mx-auto flex flex-2 flex-wrap justify-center items-center">
+    <h1 class=" z-1 text-white  font-extrabold text-5xl">Work with us, participate in a creative journey where every twist and turn is met with collaboration and freedom of choice.</h1>
+  </div>
 
+  <!-- Smooth Scroll Down--> 
+  <div class="pr-4 flex flex-1 flex-col self-end items-end">
+    <button  class="justify-end hover:bg-blue-300 transition duration-300" alt="Smooth scroll button">
+	  <a href="#philosophy">
+	  <svg xmlns="http://www.w3.org/2000/svg" class="h-14 w-14" fill="none" viewBox="0 0 24 24" stroke="white">
+        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 13l-7 7-7-7m14-8l-7 7-7-7" />
+	  </svg>
+	  </a>
+    </button>
+  </div> 
+</section>
 
-<!-- Up and Down smooth scroll buttons --> 
-<svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 11l7-7 7 7M5 19l7-7 7 7" />
-</svg>
