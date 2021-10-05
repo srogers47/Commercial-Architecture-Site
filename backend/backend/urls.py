@@ -18,9 +18,12 @@ from django.urls import path, include
 from django.conf.urls.static import static
 from django.conf import settings
 
+from home import views 
+
 urlpatterns = [
     path('admin/', admin.site.urls),
     path('', include('home.urls')),
+    path('<int:id>/', views.detail_view, name='detail')
 ]
 
 

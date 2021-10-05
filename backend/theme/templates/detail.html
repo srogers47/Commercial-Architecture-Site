@@ -1,0 +1,29 @@
+{% load static tailwind_tags %}
+{% load static  %}
+<!DOCTYPE html>
+<html lang="en" style="scroll-behavior: smooth;">
+	<head>
+        <title>Professional Archetecture & Design</title>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<meta http-equiv="X-UA-Compatible" content="ie=edge">
+		<script type="text/javascript" src="{% static 'js/jquery-3.6.0.slim.js' %}"></script>
+		{% tailwind_css %}
+	</head>
+  <body>
+	<div class="mx-auto h-screen w-screen flex flex-col items-center justify-between">
+	  <header>
+		<h1 class="flex-1 ">{{post.title}}</h1>
+	  </header>
+	  {% for pic in photos  %}
+		<div >
+		  <div >
+		  <image src="{{pic.images.url}}"</image> 
+		  </div> 
+		  <p>{{post.description }} 
+		</div>
+		{%endfor%}
+	</div> 
+  </body>
+</html> 
+

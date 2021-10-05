@@ -1,0 +1,26 @@
+<!-- Featured Images -->
+<section class="h-screen w-screen container flex justify-between">
+<!-- For each respective post/image album -->
+{% for post in posts  %} 
+  {% if post.featured %}
+  <div>
+	<h2>These posts are featured</h2> 
+	<image src="{{post.image.url}}"></image>
+  </div>
+</section> 
+
+<!-- All Images --> 
+{% else  %}
+<section> 
+  <div class="mx-auto">
+    <figure class="h-full w-full flex flex-1 flex-wrap items-center justify-center content-start">
+	  <img class="z-1 p-4 flex-col flex-1 " src="{{ post.image.url }}" alt="thumbnail">
+	  <button  class="justify-end" href="{% url 'detail' post.id %}" onclick=>  
+		<figcaption class="z-2 h-1/5 w-full bg-grey-300 text-white rounded" >{{post.title}}</figcaption>
+	  </button> 
+	  </img> 
+    </figure> 
+  </div>
+  {% endif  %}
+  {% endfor  %}
+</section>

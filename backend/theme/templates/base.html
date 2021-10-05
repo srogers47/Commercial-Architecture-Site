@@ -11,13 +11,17 @@
 		{% tailwind_css %}
 	</head>
 
-	<body class="container overflow-y-scroll overflow-x-hidden  w-screen h-full">
+	<body class="container bg-black overflow-y-scroll overflow-x-hidden  w-screen h-full">
 	  <!-- Nav bar --> 
 	  {% include 'partials/_nav.html' %}
 	  <!-- Main Content --> 
 	  {% include 'partials/_landing.html' %}
 	  {% include 'partials/_firm.html' %}
 	  {% include 'partials/_philosophy.html' %}
+	  {% include 'partials/_recent_work.html'  %}
+	  {% include 'partials/_featured_work.html'  %}
+
+	  {% include 'partials/_contact.html'  %}
 
 	</body>
 </html>
